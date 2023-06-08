@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->float('balance');
+            $table->float('blance');
             $table->boolean('suspended'); // if the value is true then suspend the user (no comments shown)
             $table->boolean('blocked'); // if the value is true then block the user (no register again)
             $table->rememberToken();

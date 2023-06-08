@@ -1,0 +1,90 @@
+category table
+ ------------------
+| category id
+| category name
+ ------------------
+
+planet table
+ ------------------
+| planet_id
+| planet_title
+ ------------------
+
+country table
+ ------------------
+| country_id
+| planet_id
+| country_title
+ ------------------
+
+governorate table
+ -----------------
+| gov_id
+| gov_planet
+| gov_center_lat
+| gov_center_mag
+| gov_title
+ -----------------
+
+locations table
+ ------------------
+| location id
+| location name
+| loc_lat
+| loc_mag
+| loc_description
+| image_key
+ ------------------
+
+image_id is the id of the image in the table
+image_key is a key that specifies that this image (or these images) is related to the location or institution
+
+institution
+ -----------------
+| inst_id
+| gov_id
+| inst_name
+| inst_lat
+| inst_mag
+| inst_description
+ -----------------
+
+services
+ ------------------
+| service_id
+| service_title
+| service_icon
+| service_description
+| service_price
+| service_date
+ ------------------
+// the service could be a room or
+
+user_service_rating
+ -------------------
+| user_id
+| service_rating
+| location_id
+| service_id
+ -------------------
+
+user_travel
+ ------------------
+| user_id
+| instituation_id
+| date
+| travel_rating
+ -----------------
+
+gourp_travel
+ -----------------
+| group_travel_id
+| group_travel_title
+| group_travel_desc
+| group_travel_number
+ -----------------
+
+manager (user)
+ ----------------
+| ins_id
+ ----------------
